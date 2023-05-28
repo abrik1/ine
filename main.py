@@ -12,7 +12,6 @@ def main():
     current_file_path = str(input("Enter file path:- "))
     try:
         file_open = open(current_file_path, "r+")
-        pass 
     except UnicodeDecodeError:
         print("invalid text file")
     except FileNotFoundError:
@@ -25,10 +24,11 @@ def main():
         print(i+1, file_contents_arr[i])
 
     while True:
-        print("[s] save")
+        print("[a] add new line")
         print("[e] edit ")
-        print("[x] exit")
+        print("[s] save")
         print("[v] view")
+        print("[x] exit")
         choice = str(input("enter choice:- "))
         if choice == "x":
             break
@@ -52,6 +52,11 @@ def main():
             new_line = str(input("enter new value:- "))
             file_contents_arr[line_number-1] = new_line
             continue
+        elif choice == "v":
+            for i in range(0, len(file_contents_arr)):
+                print(i+1, file_contents_arr[i])
+        elif choice == "a":
+            file_contents_arr.append(str(input("new line:- ")))
 
 if __name__ == "__main__":
     print("welcome to ine")
@@ -67,4 +72,3 @@ if __name__ == "__main__":
         else:
             print("invalid choice")
             continue
-        
