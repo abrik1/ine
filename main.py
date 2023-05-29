@@ -4,8 +4,7 @@ file_contents = None
 file_contents_arr = None
 line_number = None
 choice = None 
-stri = '''
-'''
+stri = ''
 
 def main():
     global current_file_path, file_open, file_contents, line_number, stri
@@ -33,8 +32,7 @@ def main():
         if choice == "x":
             break
         elif choice == "s":
-            stri ='''
-'''
+            stri =''
             for i in range(0 , len(file_contents_arr)):
                 if i == 0:
                     stri = stri+file_contents_arr[i]
@@ -72,3 +70,4 @@ if __name__ == "__main__":
         else:
             print("invalid choice")
             continue
+        
