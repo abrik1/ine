@@ -13,5 +13,5 @@
 ```
 git clone https://github.com/abrik1/ine
 cd ine
-python3 ine.py
+python3 main.py
 ```
