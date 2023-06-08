@@ -8,6 +8,7 @@
 > - extremely fast
 > - no bloat, only neccesary features like open, editing and saving
 > - cross platform, no code changing to work on Linux, Windows etc
+> - git support[todo]
 
 ## Install Guide:- 
 ```
